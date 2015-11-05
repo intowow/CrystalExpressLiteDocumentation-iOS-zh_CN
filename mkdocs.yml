@@ -8,3 +8,5 @@ pages:
 - 整合導覽:
   - '安裝設定與基本要求': 'docs/setup.md'
   - '廣告整合':
+    - '初始化': 'docs/sdk-init.md'
+    - '原生廣告': 'docs/native-ad.md'
