@@ -10,3 +10,6 @@ pages:
   - '廣告整合':
     - '初始化': 'docs/sdk-init.md'
     - '原生廣告': 'docs/native-ad.md'
+- 廣告預覽: 'docs/ad-preview.md'
+- 上線前檢查: 'docs/before-go-production.md'
+- API 參考: 'docs/api-reference.md'
