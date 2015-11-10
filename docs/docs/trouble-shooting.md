@@ -6,7 +6,7 @@
 ## Crystal ID 不正確
 - 您的訊息視窗出現此訊息:
     - `error:[Request failed: not found (404)], please reverify your crystal_id is set correct`
-- 這表示您的填在 CrystalExpress.plist 裡的 Crystal ID 不正確，請重新檢查並校正
+- 這表示您填在 CrystalExpress.plist 裡的 Crystal ID 不正確，請重新檢查並校正
 
 ## [__NSArrayI enumFromString:]: unrecognized selector 閃退
 - 您的 App 閃退時出現此訊息:

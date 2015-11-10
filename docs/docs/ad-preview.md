@@ -26,5 +26,5 @@ CrystalExpress SDK 會處理 adpreview 的網址, 並且忽略其他網址
 
 ## 預覽測試步驟
 1. 透過 CrystalExpress&trade; 後台上稿後，每個廣告都會產生一組 QRCode。
-2. 開發人員用實體手機掃瞄此 QRCode 後將開起 SDK 預覽模式，並且可以看到所要求的廣告。
+2. 開發人員用實體手機掃瞄此 QRCode 後將開啟 SDK 預覽模式，並且可以看到所要求的廣告。
 3. 測試完成後需強制停止 App，此時 SDK 將離開預覽模式。
