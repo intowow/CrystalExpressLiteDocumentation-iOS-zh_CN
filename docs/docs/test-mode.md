@@ -11,5 +11,5 @@
 初始化 SDK 時將測試模式開關設為 `YES` 即可
 ```objc
 // init SDK with test mode
-  [I2WAPI initWithVerboseLog:YES isTestMode:YES crystalId:@"yourcrystalidhere"];
+  [I2WAPI initWithVerboseLog:YES isTestMode:YES crystalId:@"intowow提供的 Crystal ID"];
 ```
