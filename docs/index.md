@@ -1,8 +1,4 @@
 ## 簡介
 ![Overview](images/overview.png)
 
-1. CrystalExpress SDK 提供原生高清視頻廣告服務給手機 apps
-2. CrystalExpress 主要的目標是要提供高端的 apps 完美的廣告以及使用者體驗
-
-
-## [中英術語對照](https://github.com/roylo/CrystalExpressDocumentation-iOS-zh_CN/blob/master/terminology.md)
+CrystalExpress&trade; 為一超高清、零延遲的 App 品牌視頻廣告解決方案。藉由整合 CrystalExpress&trade; SDK，為您的 App 提供完美的廣告以及使用者體驗．

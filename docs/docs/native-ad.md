@@ -1,7 +1,8 @@
+您可以透過以下步驟為 iOS App 添加原生廣告。
 ## 1. 要求原生廣告
 ```objc
 - (void)loadNativeAd {
-    CENativeAd *nativeAd = [[CENativeAd alloc] initWithPlacement:@"YOUR_PLACEMENT_NAME"];
+    CENativeAd *nativeAd = [[CENativeAd alloc] initWithPlacement:@"廣告版位名稱"];
 
     // set delegate to self
     nativeAd.delegate = self;
@@ -53,7 +54,7 @@
 ```
 
 ## 4. 控制原生廣告播放
-- 當呼叫 `CEMediaView` 的 `setNavieAd` 之後, 會組成廣告主要的 View (可能是 image/animation/video)
+- 當呼叫 `CEMediaView` 的 `setNavieAd` 之後，會組成廣告主要的 View (可能是 image/animation/video)
 
 ```objc
     [self.adMediaCoverView setNativeAd:nativeAd];
@@ -99,8 +100,8 @@
 ```
 
 ### 注意事項
-1. 若是重複利用 AdView 來顯示原生廣告, 請呼叫 `[nativeAd unregisterView]` 清除前一次註冊的原生廣告內容
+1. 若是重複利用 AdView 來顯示原生廣告，請呼叫 `[nativeAd unregisterView]` 清除前一次註冊的原生廣告內容
 
 ## Reference
 - [API reference](http://intowow.github.io/CrystalExpressLiteDocumentation-iOS-zh_CN/)
-- [Sample code project](https://github.com/intowow/CrystalExpressCNSample/tree/master/CrystalExpressLite)
+- [範例程式](https://github.com/intowow/CrystalExpressSample-Lite-iOS)
