@@ -14,3 +14,6 @@
 [__NSArrayI enumFromString:]: unrecognized selector sent to instance 0x78e37970
 ```
 - 添加 -ObjC in TARGETS -> Build Settings -> Linking -> Other Linker Flags
+
+## 整合 SDK 後的 App 大小會增加多少？
+- 在沒有開啟 debug symbol 的前提下，整合 SDK 後的 App 大約會增加 1.2 MB
