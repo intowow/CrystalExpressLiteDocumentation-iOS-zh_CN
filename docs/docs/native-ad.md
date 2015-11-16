@@ -11,9 +11,26 @@
 ```
 
 ## 2. 利用回傳的廣告素材創建原生廣告 view
-## 3. 註冊原生廣告
+- SDK 完成讀取原生廣告素材之後會呼叫 `nativeAdDidLoad:(CENativeAd *)nativeAd` 這個代理人方法, App 可以透過 `nativeAd` 取得下列廣告元件
+    - 文字
+        - 廣告標題: `nativeAd.title`
+        - 廣告文字描述: `nativeAd.body`
+        - 廣告動作文字: `nativeAd.callToAction`
+    - 圖像
+        - 廣告 icon: `nativeAd.icon`, 可以透過 `loadImageAsyncWithBlock` 讀取得到 `UIImage`
+    - 主要廣告內容
+        - 需搭配 `CEMediaView` 來讀取, App 可以控制 `CEMediaView` 的大小做最佳的廣告展示
+            - ex. `[self.adMediaCoverView setNativeAd:nativeAd]`
+- App 可以自行組合以上廣告元件並展示最適合 App 的原生廣告
 ```objc
 #pragma mark - CENativeAdDelegate
+
+//
+// In demo code, we have layout demo native Ad in storyboard.
+// Please see the source code at: https://github.com/intowow/CrystalExpressCNSample/tree/master/CrystalExpressLite
+// After nativeAd did load, we setup each app component by access nativeAd
+// ex. nativeAd.title, nativeAd.body ...etc
+//
 - (void)nativeAdDidLoad:(CENativeAd *)nativeAd
 {
     _nativeAd = nativeAd;
@@ -50,6 +67,29 @@
 
 }
 
+```
+
+## 3. 註冊原生廣告
+- 最後我們要跟 `nativeAd` 註冊用戶可互動的範圍, 標示哪些廣告元件可以點擊
+```objc
+    ....
+
+    // register the ad view with nativeAd
+    [nativeAd registerViewForInteraction:self.adUIView
+                      withViewController:self];
+
+//    You can replace to use the following method to specify the clicable area
+//
+//    NSArray *clickableViews = @[
+//                                self.callToActionBtn,
+//                                self.adBody,
+//                                ];
+//
+//    [nativeAd registerViewForInteraction:self.adUIView
+//                      withViewController:self
+//                      withClickableViews:clickableViews];
+
+    ....
 ```
 
 ## 4. 控制原生廣告播放
