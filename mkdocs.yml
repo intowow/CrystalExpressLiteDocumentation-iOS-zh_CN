@@ -5,13 +5,15 @@ extra_css:
 - css/custom.css
 pages:
 - 首頁: index.md
-- 整合導覽:
-  - '安裝設定與基本要求': 'docs/setup.md'
-  - '廣告整合':
-    - '初始化': 'docs/sdk-init.md'
+- 名詞定義: 'docs/terminology.md'
+- 整合前置步驟:
+  - 申請 Crystal ID 與版位規劃: 'docs/prepare.md'
+  - SDK 安裝: 'docs/sdk-installation.md'
+  - 初始化 SDK: 'docs/sdk-init.md'
+- 廣告版位整合:
     - '原生廣告': 'docs/native-ad.md'
-- 廣告預覽: 'docs/ad-preview.md'
+- 預覽模式: 'docs/ad-preview.md'
 - 測試模式: 'docs/test-mode.md'
-- 上線前檢查: 'docs/before-go-production.md'
+- 正式上線檢查要點: 'docs/before-go-production.md'
+- 問題集: 'docs/trouble-shooting.md'
 - API 參考: 'docs/api-reference.md'
-- 疑難排解: 'docs/trouble-shooting.md'
